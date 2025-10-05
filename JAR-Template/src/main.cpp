@@ -138,19 +138,20 @@ void pre_auton() {
         Brain.Screen.printAt(5, 140, "Auton 1");
         break;
       case 1:
-        Brain.Screen.printAt(5, 140, "Auton 2");
+        Brain.Screen.printAt(5,n140,"team_mango_anything")
         break;
       case 2:
-        Brain.Screen.printAt(5, 140, "Auton 3");
+        Brain.Screen.printAt(5, 140, "aarav")       
         break;
       case 3:
-        Brain.Screen.printAt(5, 140, "Auton 4");
+        Brain.Screen.printAt(5,140,"aiden");
+    
         break;
       case 4:
-        Brain.Screen.printAt(5, 140, "Auton 5");
+        Brain.Screen.printAt(5, 140, "sanya");
         break;
       case 5:
-        Brain.Screen.printAt(5, 140, "Auton 6");
+        Brain.Screen.printAt(5, 140, "ishnavi");
         break;
       case 6:
         Brain.Screen.printAt(5, 140, "Auton 7");
@@ -176,6 +177,7 @@ void pre_auton() {
  * autons.cpp and declared in autons.h.
  */
 
+ 
 void autonomous(void) {
   auto_started = true;
   switch(current_auton_selection){ 
@@ -183,19 +185,19 @@ void autonomous(void) {
       drive_test();
       break;
     case 1:         
-      drive_test();
+      team_mango_anything();
       break;
     case 2:
-      turn_test();
+      aarav();
       break;
     case 3:
-      swing_test();
+      aiden();
       break;
     case 4:
-      full_test();
+      sanya();
       break;
     case 5:
-      odom_test();
+      ishnavi();
       break;
     case 6:
       tank_odom_test();
@@ -253,6 +255,8 @@ int main() {
     wait(100, msec);
   }
 }
+
+
 
 
 
